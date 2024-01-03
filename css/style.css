@@ -13,7 +13,7 @@
 
 --- COLORS
 Primary: #e67e22 
-Tints: #fae5d3
+Tints: #fae5d3 #cf711f
 Shades:
 Accents:
 Greys: #555 #333
@@ -36,10 +36,10 @@ Greys: #555 #333
 
 html {
   font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-  font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -51,7 +51,7 @@ body {
 }
 
 .hero {
-  max-width: 130rem;
+  max-width: 150rem;
   margin: 0 auto;
   display: grid;
   gap: 9.6rem;
@@ -84,9 +84,10 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 2.4rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
 
 .btn--full:link,
@@ -116,4 +117,41 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.customer-images {
+  display: flex;
+}
+
+.customer-images img {
+  max-height: 4.8rem;
+  max-width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fae5d3;
+}
+
+.customer-images img:last-child {
+  margin: 0;
+}
+
+.margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.delivered-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.number-of-deliveries {
+  color: #333;
+  font-weight: 700;
 }
