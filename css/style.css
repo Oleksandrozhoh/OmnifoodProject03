@@ -2,6 +2,10 @@
 
 --- TYPOGRAPHY SYSTEM
 
+--Container width
+    Hero: 1600px
+    Rest: 1500px
+
 --Font weights:
     Default: 400  
     Medium: 500 
@@ -15,6 +19,8 @@
 
     FONT SIZE SYSTEM (px)
     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98   
+ main header: 6.2rem
+ sub header: 2.4rem
 
 --- COLORS
 Primary: #e67e22 
@@ -31,7 +37,10 @@ Default: 9px
 --- WHITE SPACE
     SPACING SYSTEM (px)
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    main header margin: 3.2
 
+    Letter spacing:
+          subheader: 1px;
 */
 
 * {
@@ -52,21 +61,74 @@ body {
 }
 
 /* *******************GENERAL COMPONENTS****************** */
-.section-hero {
-  background-color: #fae5d3;
-  padding: 4.8rem 0 9.6rem 0;
+
+/* ********************REUSABLE COMPONENTS**************** */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
 
-.hero {
+.centered-container {
   max-width: 160rem;
+  padding: 0 4.8rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+}
+
+/* reusable grid where grid class
+will apply the grid on to the 
+container and grid--N-cols 
+will specify the number of the 
+columns in the grid */
+.grid {
   display: grid;
   gap: 9.6rem;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
 }
 
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-primary,
+.heading-secondary {
+  color: #333;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.header-primary {
+  font-size: 6.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.hero-discription {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.subheading {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* *******************HEADER****************************** */
 .header-section {
   /* header will have fixed hight because we want it to be sticky */
   height: 9.6rem;
@@ -76,13 +138,6 @@ body {
   align-items: center;
   background-color: #fae5d3;
 }
-
-/* ********************REUSABLE COMPONENTS**************** */
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-/* *******************HEADER****************************** */
 
 .logo {
   height: 2.2rem;
@@ -128,25 +183,23 @@ body {
 }
 
 /* *******************HERO SECTION************************ */
+.section-hero {
+  background-color: #fae5d3;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
 
 .hero-image {
   width: 100%;
-}
-
-.header-primary {
-  font-size: 6.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  margin-bottom: 3.2rem;
-  letter-spacing: -1px;
-}
-
-.hero-discription {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -220,4 +273,39 @@ body {
 .number-of-deliveries {
   color: #333;
   font-weight: 700;
+}
+
+/* *******************HOW IT WORKS SECTION****************** */
+.section-how {
+  padding-top: 9.2rem;
+  padding-bottom: 9.2rem;
+  background-color: #fae5d3;
+}
+
+.how-it-works-content {
+  align-items: center;
+}
+
+.how-it-works-pic {
+  max-width: 50%;
+  justify-self: center;
+}
+
+.header-tertiary {
+  font-size: 3.6rem;
+}
+
+.step-description {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+}
+
+.step-number {
+  font-size: 3.6rem;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
