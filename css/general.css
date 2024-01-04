@@ -24,15 +24,16 @@
 
 --- COLORS
 Primary: #e67e22 
-Tints: #fae5d3 #f8d8bd #cf711f
+Tints: #fae5d3 #f8d8bd #cf711f 
 Shades:
-Accents:
+Accents: #51cf66
 Greys: #555 #333
 
 --- SHADOWS
 
 --- BORDER RADIUS
 Default: 9px
+Cards: 20px
 
 --- WHITE SPACE
     SPACING SYSTEM (px)
@@ -129,8 +130,6 @@ columns in the grid */
   letter-spacing: 1px;
 }
 
-.tag {
-  display: inline-block;
-  font-size: 1.2rem;
-  margin-bottom: 1.6rem;
+strong {
+  font-weight: 500;
 }

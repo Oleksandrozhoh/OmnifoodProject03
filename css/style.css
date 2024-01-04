@@ -259,6 +259,9 @@ div .header-tertiary {
 
 /* *******************MEALS SECTION****************** */
 .meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .meals-content.grid {
@@ -268,8 +271,23 @@ div .header-tertiary {
 
 .meal-image {
   max-width: 100%;
-  margin-bottom: 2rem;
 }
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  color: #333;
+  border-radius: 100px;
+}
+
+.meal-tags {
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+}
+
 .list {
   background-color: green;
 }
@@ -277,13 +295,13 @@ div .header-tertiary {
 .meal-title {
   font-size: 2rem;
   color: #333;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 3.2rem;
 }
 .meal-attributes {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
   list-style: none;
   font-size: 1.8rem;
 }
@@ -294,4 +312,17 @@ div .header-tertiary {
 
 .meal-attribute {
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-content-box {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
