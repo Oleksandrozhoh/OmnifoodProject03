@@ -80,7 +80,7 @@
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -273,16 +273,6 @@ div .header-tertiary {
   max-width: 100%;
 }
 
-.tag {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  background-color: #51cf66;
-  color: #333;
-  border-radius: 100px;
-}
-
 .meal-tags {
   margin-bottom: 1.6rem;
   font-weight: 500;
@@ -325,4 +315,9 @@ div .header-tertiary {
 
 .meal-content-box {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  display: flex;
+  gap: 1rem;
 }
