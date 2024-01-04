@@ -128,3 +128,9 @@ columns in the grid */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
