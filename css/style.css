@@ -135,6 +135,10 @@
   margin-bottom: 8rem;
 }
 
+.margin-bottom-medium {
+  margin-bottom: 5.4rem !important;
+}
+
 .delivered-text {
   font-size: 1.6rem;
   font-weight: 600;
@@ -266,7 +270,7 @@ div .header-tertiary {
 
 .meals-content.grid {
   justify-content: space-around;
-  padding: 10rem;
+  padding: 5rem 10rem;
 }
 
 .meal-image {
@@ -276,10 +280,6 @@ div .header-tertiary {
 .meal-tags {
   margin-bottom: 1.6rem;
   font-weight: 500;
-}
-
-.list {
-  background-color: green;
 }
 
 .meal-title {
@@ -320,4 +320,64 @@ div .header-tertiary {
 .meal-tags {
   display: flex;
   gap: 1rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.diet-options-header {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.list li {
+  font-size: 2.2rem;
+  /* font-weight: 500; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1.6rem;
+}
+
+.checkmark-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+  margin-right: 1.6rem;
+}
+
+.diet-options .header-tertiary {
+  margin-bottom: 4.2rem;
+  margin-top: 1rem;
+}
+
+.link-to-meals-page:link,
+.link-to-meals-page:visited {
+  font-size: 2.4rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link-to-meals-page:hover,
+.link-to-meals-page:active {
+  font-size: 2.4rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.meals-link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
