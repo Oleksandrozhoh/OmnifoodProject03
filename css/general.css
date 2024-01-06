@@ -32,6 +32,8 @@ Greys: #555 #333
 lightest gray #6f6f6f allowd on #fae5d3
 
 --- SHADOWS
+  default - box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.6);
+  hover - box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.3);
 
 --- BORDER RADIUS
 Default: 9px
@@ -62,6 +64,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  margin-bottom: 9.6rem;
 }
 
 /* *******************GENERAL COMPONENTS****************** */
