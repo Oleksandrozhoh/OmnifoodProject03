@@ -64,7 +64,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  margin-bottom: 9.6rem;
 }
 
 *:focus {
@@ -110,6 +109,10 @@ columns in the grid */
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .header-primary,
