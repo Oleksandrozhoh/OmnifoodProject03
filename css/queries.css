@@ -1,0 +1,14 @@
+/* 1rem = 1em = 16px in media query */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .header-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
