@@ -320,9 +320,37 @@
     <section class="signup-section">
       <div class="centered-container">
         <div class="form-container">
-        <div class="form-box">Form</div>
+        <div class="form-box">
+          <h2 class="heading-secondary">Get your first meal on us!</h2>
+          <p class="form-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime.</p>
+          <form class="form-content" action="#">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="ex: John Smith" required>
+            </div>
+            <div>
+              <label for="email">Email adress</label>
+              <input id="email" type="email" placeholder="ex: me@example.com" required>
+            </div>
+
+            <div>
+            <label>Where did you hear about us?</label>
+            <select  required>
+              <option value="">Please choose an option below:</option>
+              <option value="friends">Friends or family</option>
+              <option value="internet">Internet</option>
+              <option value="newspaper">Newspaper</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+            <button class="btn btn--form">Sign up now</button>
+
+          </form>
+        </div>
         <div class="form-image-box" role="img" aria-label="Woman enjoying food">&nbsp;</div>
       </div>
+
     </div>
     </section>
     </main>
