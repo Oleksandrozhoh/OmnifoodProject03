@@ -1,4 +1,6 @@
 /* 1rem = 1em = 16px in media query */
+
+/* *****************1350px and less*********************** */
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
@@ -10,5 +12,161 @@
 
   .gallery {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .list {
+    gap: 1rem;
+  }
+}
+
+/* *****************1250px and less*********************** */
+@media (max-width: 80em) {
+  .card {
+    width: 90%;
+  }
+
+  .meals-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .btn,
+  btn:link,
+  .btn:visited {
+    margin-bottom: 2rem !important;
+  }
+
+  .heading-secondary,
+  .header-tertiary {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+  }
+
+  div .header-tertiary {
+    font-size: 2.4rem;
+  }
+  .diet-options .header-tertiary {
+    margin-bottom: 2.4rem;
+    margin-top: 0;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .meal-content-box {
+    padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+  }
+
+  .header-section {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 4.8rem;
+    padding: 4.8rem 4.8rem 8rem 4.8rem;
+  }
+
+  .form-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* *********900px********* */
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 12rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 0;
+  }
+
+  .testimonials-content {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    column-gap: 3.4rem;
+  }
+
+  .adress-col {
+    padding-right: 3.4rem;
+  }
+
+  .logo-col {
+    padding-right: 3.4rem;
+  }
+
+  .form-container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .meals-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-options {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    max-width: 50rem;
+    justify-self: center;
   }
 }

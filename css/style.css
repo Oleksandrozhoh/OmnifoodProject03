@@ -200,7 +200,7 @@
 
 div .header-tertiary {
   font-size: 3rem;
-  line-height: 1.8rem;
+  line-height: 1.8;
   /* margin-bottom: 1.6rem; */
 }
 
@@ -286,6 +286,7 @@ div .header-tertiary {
 
 .diet-options-header {
   font-size: 3rem;
+  line-height: 1.6;
   margin-bottom: 2.4rem;
 }
 
@@ -401,6 +402,7 @@ div .header-tertiary {
 .section-pricing {
   margin-bottom: 9.6rem;
 }
+
 .card {
   display: flex;
   flex-direction: column;
