@@ -169,4 +169,62 @@
     max-width: 50rem;
     justify-self: center;
   }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* display none does not allow to use 
+    animations so thats not the best way 
+    to hide the elements we will be 
+    calling with JS later */
+    /* display: none; */
+
+    /* opacity will make the menu overlay transpatent */
+    opacity: 0;
+    /* to make overlay unaccessible for mouse and keybord 
+    we need to use pointer-evente property*/
+    pointer-events: none;
+    /* and finaly need to  hide it from screen readers*/
+    visibility: hidden;
+    transform: translateX(100%);
+
+    transition: all 0.5s;
+  }
+
+  .nav--open .main-nav {
+    opacity: 1;
+    /* setting all the properties we used to hide the element back to default  */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav--open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav--open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 4rem;
+  }
 }
