@@ -172,6 +172,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
   .main-nav {
     position: absolute;
@@ -298,5 +299,9 @@
     display: flex;
     justify-content: center;
     text-align: center !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
