@@ -124,7 +124,7 @@
   }
 
   .testimonials-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .gallery {
@@ -226,5 +226,77 @@
   .nav-link:link,
   .nav-link:visited {
     font-size: 4rem;
+  }
+}
+
+/* *********700px********* */
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+
+  .features.centered-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem;
+  }
+}
+
+/* *********500px********* */
+@media (max-width: 31.25em) {
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .account-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .logo-col {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  .adress-col {
+    grid-column: 4/-1;
+    grid-row: 2;
+  }
+
+  .meals-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .meal {
+    max-width: 50rem;
+  }
+
+  .form-box .heading-secondary {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-image-box {
+    display: none;
+  }
+}
+
+/* *********400px********* */
+@media (max-width: 31.25em) {
+  html {
+    font-size: 30%;
+  }
+
+  .hero {
+    padding: 3.4rem;
+  }
+
+  .subheading,
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
   }
 }
