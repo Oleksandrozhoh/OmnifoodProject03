@@ -23,6 +23,43 @@ const headerSectionEl = document.querySelector(".header-section");
 btnMobileNavEl.addEventListener("click", function () {
   headerSectionEl.classList.toggle("nav--open");
 });
+
+// get all links into a variable
+const allLinks = document.querySelectorAll("a:link");
+// iterate trough all the links
+allLinks.forEach(function (link) {
+  // add event listener to every link element
+  link.addEventListener("click", function (e) {
+    //cancel default scrolling behaviour
+    e.preventDefault();
+    //store hrev attribute value into a variable
+    const href = link.getAttribute("href");
+
+    if (href === "#")
+      //condition that determines the scrolling target
+      // based on the value of href attribute
+      window.scrollTo({
+        top: 0,
+        behaviour: "smooth",
+      });
+
+    // scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behaviour: "smooth" });
+    }
+
+    link.classList.forEach(function (a) {
+      console.log(a);
+    });
+
+    if (link.classList.contains("nav-link"))
+      headerSectionEl.classList.toggle("nav--open");
+  });
+});
+
+//////////////////////////////////////////////////
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
